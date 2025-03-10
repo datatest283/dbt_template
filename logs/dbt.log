@@ -12,3 +12,140 @@ Runtime Error
 [0m17:03:13.713608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113587230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11358e9f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11359f130>]}
 [0m17:03:13.713768 [debug] [MainThread]: Flushing usage events
 [0m17:03:14.542145 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:14:53.313241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f43044abd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f430718c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f43044ab70>]}
+
+
+============================== 16:14:53.317287 | 6b8c666f-4c9a-4f73-90e8-d3985b002ec8 ==============================
+[0m16:14:53.317287 [info ] [MainThread]: Running with dbt=1.9.0
+[0m16:14:53.318251 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/workspaces/dbt_template', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:14:53.328599 [error] [MainThread]: Encountered an error:
+'NoneType' object is not subscriptable
+[0m16:14:53.330194 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/cli/main.py", line 477, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/task/init.py", line 319, in run
+    profile_name = self.get_profile_name_from_current_project()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/task/init.py", line 140, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+           ~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+[0m16:14:53.332642 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 0.023303337, "process_in_blocks": "168", "process_kernel_time": 0.158996, "process_mem_max_rss": "89940", "process_out_blocks": "16", "process_user_time": 1.212347}
+[0m16:14:53.333358 [debug] [MainThread]: Command `dbt init` failed at 16:14:53.333226 after 0.02 seconds
+[0m16:14:53.333898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f433cc7a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f430551190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75f430552210>]}
+[0m16:14:53.334439 [debug] [MainThread]: Flushing usage events
+[0m16:14:53.678624 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:15:59.848902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723cd81aa6f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723cd83f6180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723cd8727f50>]}
+
+
+============================== 16:15:59.852238 | 8ec75693-144e-44d4-86a0-7efe3737afd6 ==============================
+[0m16:15:59.852238 [info ] [MainThread]: Running with dbt=1.9.0
+[0m16:15:59.853103 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/workspaces/dbt_template', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:15:59.862552 [error] [MainThread]: Encountered an error:
+'NoneType' object is not subscriptable
+[0m16:15:59.863888 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/cli/main.py", line 477, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/task/init.py", line 319, in run
+    profile_name = self.get_profile_name_from_current_project()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/task/init.py", line 140, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+           ~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+[0m16:15:59.865029 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 0.019442769, "process_in_blocks": "0", "process_kernel_time": 0.079473, "process_mem_max_rss": "89880", "process_out_blocks": "16", "process_user_time": 1.25714}
+[0m16:15:59.865632 [debug] [MainThread]: Command `dbt init` failed at 16:15:59.865517 after 0.02 seconds
+[0m16:15:59.866111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723cd828c590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723cd81d5940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x723cd82b6030>]}
+[0m16:15:59.866619 [debug] [MainThread]: Flushing usage events
+[0m16:16:00.199920 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:17:15.183051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70ef8ab16ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70ef8ab16ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70ef8ab16bd0>]}
+
+
+============================== 16:17:15.186565 | b80fd51f-29b9-4f04-8b6b-2768566f85bb ==============================
+[0m16:17:15.186565 [info ] [MainThread]: Running with dbt=1.9.0
+[0m16:17:15.187392 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/workspaces/dbt_template', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:17:15.196904 [error] [MainThread]: Encountered an error:
+'NoneType' object is not subscriptable
+[0m16:17:15.198282 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/cli/main.py", line 477, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/task/init.py", line 319, in run
+    profile_name = self.get_profile_name_from_current_project()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/task/init.py", line 140, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+           ~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+[0m16:17:15.199451 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 0.019913215, "process_in_blocks": "0", "process_kernel_time": 0.155369, "process_mem_max_rss": "89884", "process_out_blocks": "8", "process_user_time": 1.151328}
+[0m16:17:15.200044 [debug] [MainThread]: Command `dbt init` failed at 16:17:15.199931 after 0.02 seconds
+[0m16:17:15.200493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70ef8e3afa70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70ef8e0744a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70ef8af279e0>]}
+[0m16:17:15.201022 [debug] [MainThread]: Flushing usage events
+[0m16:17:15.557497 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:19:48.493453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c1a16be30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c1a13c4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c1a315a60>]}
+
+
+============================== 16:19:48.496864 | 9b137fbf-bc8c-42cb-8401-0d524964fe66 ==============================
+[0m16:19:48.496864 [info ] [MainThread]: Running with dbt=1.9.0
+[0m16:19:48.497716 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/workspaces/dbt_template', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m16:19:48.508250 [error] [MainThread]: Encountered an error:
+'NoneType' object is not subscriptable
+[0m16:19:48.509712 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/cli/main.py", line 477, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/task/init.py", line 319, in run
+    profile_name = self.get_profile_name_from_current_project()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/dbt/task/init.py", line 140, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+           ~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+[0m16:19:48.510898 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 0.06906814, "process_in_blocks": "0", "process_kernel_time": 0.138956, "process_mem_max_rss": "91064", "process_out_blocks": "8", "process_user_time": 1.333983}
+[0m16:19:48.511450 [debug] [MainThread]: Command `dbt init` failed at 16:19:48.511334 after 0.07 seconds
+[0m16:19:48.511904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c1a1edcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c1a315a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c1997f830>]}
+[0m16:19:48.512393 [debug] [MainThread]: Flushing usage events
+[0m16:19:48.856779 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:22:55.760367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75249d72f380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75249d121c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75249eb8e300>]}
+
+
+============================== 16:22:55.763655 | 3c4ac848-dbae-4b98-9824-f6514ecac998 ==============================
+[0m16:22:55.763655 [info ] [MainThread]: Running with dbt=1.9.0
+[0m16:22:55.764479 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/workspaces/dbt_template/logs', 'debug': 'False', 'profiles_dir': '/workspaces/dbt_template', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:22:55.777198 [info ] [MainThread]: Setting up your profile.
+[0m16:23:27.903630 [info ] [MainThread]: Profile dbt-template-profile written to /workspaces/dbt_template/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:23:27.905108 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 32.19619, "process_in_blocks": "0", "process_kernel_time": 0.202857, "process_mem_max_rss": "208044", "process_out_blocks": "32", "process_user_time": 1.89043}
+[0m16:23:27.905890 [debug] [MainThread]: Command `dbt init` succeeded at 16:23:27.905758 after 32.20 seconds
+[0m16:23:27.906371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75249cd54ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75249cd55910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75249cfc8d10>]}
+[0m16:23:27.907269 [debug] [MainThread]: Flushing usage events
+[0m16:23:28.238879 [debug] [MainThread]: An error was encountered while trying to flush usage events
