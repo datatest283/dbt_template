@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+
+  - name: thelook_ecommerce
+    schema: stg_template__users
+    tables:
+      - name: users
+      #- name: categories
+      

@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('thelook_ecommerce', 'users') }}

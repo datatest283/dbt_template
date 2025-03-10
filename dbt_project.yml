@@ -2,8 +2,8 @@
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
 name: 'dbt_template'
-#version: '1.0.0'
-#config-version: 2
+version: '1.0.0'
+config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
 profile: 'dbt-template-profile'
@@ -21,7 +21,7 @@ snapshot-paths: ["snapshots"]
 target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
-  - "dbt_packages"
+  - "dbt_modules"
 
 
 # Configuring models
@@ -38,13 +38,12 @@ models:
   dbt_template:
     staging:
       +materialized: view
-      #schema: stg_local_bike
+      schema: stg_template
       
     intermediate:
       +materialized: view
-      #schema: int_local_bike
+      schema: int_template
   
     mart:
       +materialized: table
-      #schema: mrt_local_bike
-      
+      schema: mrt_template

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+- name: stg_template__users
+  description: "This model contains information about the users who buy the products"
+  columns:
+    - name: id
+      description: "Primary key, unique identifier for each user"
+      tests:
+        - unique
+        - not_null
