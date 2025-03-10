@@ -1,0 +1,14 @@
+[0m17:03:13.686199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a292b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1137034d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113703390>]}
+
+
+============================== 17:03:13.688695 | 63b4c3b4-539d-4788-9309-35d89189bb1f ==============================
+[0m17:03:13.688695 [info ] [MainThread]: Running with dbt=1.9.0
+[0m17:03:13.688952 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/idjany/Documents/Wewyse/Projects/dbt_template', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt ', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:03:13.689482 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt_project.yml does not parse to a dictionary
+[0m17:03:13.713139 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": false, "command_wall_clock_time": 0.05081104, "process_in_blocks": "0", "process_kernel_time": 0.075215, "process_mem_max_rss": "96075776", "process_out_blocks": "0", "process_user_time": 0.429456}
+[0m17:03:13.713424 [debug] [MainThread]: Command `cli deps` failed at 17:03:13.713368 after 0.05 seconds
+[0m17:03:13.713608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113587230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11358e9f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11359f130>]}
+[0m17:03:13.713768 [debug] [MainThread]: Flushing usage events
+[0m17:03:14.542145 [debug] [MainThread]: An error was encountered while trying to flush usage events
